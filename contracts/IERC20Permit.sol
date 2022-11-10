@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.1;
+pragma solidity ^0.8;
 
 interface IERC20Permit {
     // @dev returns token totalSupply
@@ -59,7 +59,7 @@ interface IERC20Permit {
         uint8 v,
         bytes32 r,
         bytes32 s
-    );
+    ) external;
 
     // Emit event after successful transfer
     event Transfer(address indexed from, address indexed to, uint value);
