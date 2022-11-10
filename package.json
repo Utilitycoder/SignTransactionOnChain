@@ -2,6 +2,11 @@
   "dependencies": {
     "hardhat": "^2.12.2"
   },
+
+  "scripts": {
+    "compile": "yarn hardhat compile"
+  },
+
   "devDependencies": {
     "@ethersproject/abi": "^5.4.7",
     "@ethersproject/providers": "^5.4.7",

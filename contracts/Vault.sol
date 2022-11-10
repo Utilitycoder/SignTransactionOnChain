@@ -22,7 +22,7 @@ contract Vault {
      *@dev deposit funds with signature
      *@param amount: amount to be deposited
      *@param deadline: when the signature expires
-     *@param (v, r, s): digital signature variables
+     *@param v, r, s: digital signature variables
      */
     function depositWithPermit(
         uint amount,
