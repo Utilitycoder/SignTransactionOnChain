@@ -57,7 +57,7 @@ const getPermitSignature = async (signer, token, spender, value, deadline) => {
 };
 
 describe("Erc20 Permit", () => {
-    it("Should run permission and send ether in one transaction", async () => {
+    it("Should run permission and send token in one transaction", async () => {
         const accounts = await ethers.getSigners(1)
         const signer = accounts[0]
 
