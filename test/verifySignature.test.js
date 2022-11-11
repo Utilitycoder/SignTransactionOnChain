@@ -13,7 +13,8 @@ describe("Verify Signature", () => {
     const to = accounts[1];
     const amount = 999;
     const message = "Hello";
-    const nonce = 123;
+    const nonce = await ethers.provider.getTransactionCount(signer.address);
+    console.log(nonce)
 
     const hash = await contract.getMessageHash(
       to.address,
