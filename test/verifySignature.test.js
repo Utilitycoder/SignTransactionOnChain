@@ -16,6 +16,7 @@ describe("Verify Signature", () => {
     const nonce = await ethers.provider.getTransactionCount(signer.address);
     console.log(nonce)
 
+    // Generate transaction hash
     const hash = await contract.getMessageHash(
       to.address,
       amount,
